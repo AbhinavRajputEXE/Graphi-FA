@@ -16,15 +16,18 @@
     }
   },
   "sendMail": {
-    "function": "sendMail",
-    "service": "outlook",
-    "app": "malt",
     "payload": {
-      "recipientEmail": "abhinav.rajput@ab-inbev.com",
+      "recipientEmails": ["abhinav.rajput@ab-inbev.com", "abhinav.rajput@ab-inbev.com"],
+      "ccEmails": ["abhinav.rajput@ab-inbev.com"],
+      "bccEmails": ["abhinav.rajput@ab-inbev.com"],
       "subject": "Test mail",
       "body": "Test body",
-      "content-type": "Text"
-    }
+      "content-type": "Text",
+      "attachments": []
+    },
+    "function": "sendMail",
+    "service": "outlook",
+    "app": "kria"
   },
   "getProfile": {
     "function": "getProfile",

@@ -1,4 +1,4 @@
-# GraphI - A graph API reusable component
+# GraphI - A graph API reusable function app
 
 This application is a versatile solution designed to interact with Microsoft Graph APIs, offering a wide range of functionalities from a single endpoint. It streamlines the process of integrating various Microsoft services into applications by providing a unified interface for authentication, request handling, and error management.
 
@@ -34,7 +34,7 @@ The project follows a modular structure to facilitate easy maintenance and scala
 
 - **Root Directory**
 
-  - `app.py`: Entry point of the application. Handles incoming requests, user authentication, payload extraction, and routing.
+  - `function_app.py`: Entry point of the application. Handles incoming requests, user authentication, payload extraction, and routing.
   - `.env`: Environment configuration file containing sensitive data such as API credentials and database details.
   - `database/`: Directory containing database configuration files.
   - `logger/`: Directory containing logger configuration files.
@@ -71,7 +71,7 @@ The project follows a modular structure to facilitate easy maintenance and scala
 ## Dependencies
 
 - Python 3.x
-- Flask
+- Azure functions
 - Microsoft Graph API
 
 ## Installation
@@ -82,7 +82,7 @@ The project follows a modular structure to facilitate easy maintenance and scala
 4. Activate the virtual environment:
 5. Install dependencies: `pip install -r requirements.txt`
 6. Configure environment variables in `.env` file.
-7. Run the Flask application: `python app.py`
+7. Run the Flask application: `func start`
 
 ## Configuration
 
@@ -93,13 +93,13 @@ The project follows a modular structure to facilitate easy maintenance and scala
 
 ## Requirements
 
-| Package    | Version |
-| ---------- | ------- |
-| flask      | Latest  |
-| flask_cors | Latest  |
-| jwt        | Latest  |
-| requests   | Latest  |
-| sqlalchemy | Latest  |
+| Package                | Version |
+| ---------------------- | ------- |
+| mysql-connector-python | Latest  |
+| pyjwt                  | Latest  |
+| python-dotenv          | Latest  |
+| azure-functions        | Latest  |
+| sqlalchemy             | Latest  |
 
 ## Error Handling
 
