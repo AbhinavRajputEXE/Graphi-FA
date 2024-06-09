@@ -1,0 +1,54 @@
+{
+  "scheduleMeeting": {
+    "function": "scheduleMeeting",
+    "service": "calendar",
+    "app": "kria",
+    "payload": {
+      "subject": "Test meeting",
+      "content": "Test meeting content",
+      "startDateTime": "2024-04-09T16:53:01.450Z",
+      "endDateTime": "2024-04-09T17:53:01.450Z",
+      "emailAddress": "keshab.kataruka@ab-inbev.com",
+      "name": "Keshab",
+      "Type": "required",
+      "allowNewTimeProposals": true,
+      "location": "online"
+    }
+  },
+  "sendMail": {
+    "function": "sendMail",
+    "service": "outlook",
+    "app": "malt",
+    "payload": {
+      "recipientEmail": "abhinav.rajput@ab-inbev.com",
+      "subject": "Test mail",
+      "body": "Test body",
+      "content-type": "Text"
+    }
+  },
+  "getProfile": {
+    "function": "getProfile",
+    "service": "profile",
+    "app": "malt"
+  },
+  "getPhoto": {
+    "function": "getPhoto",
+    "service": "profile",
+    "app": "malt"
+  },
+  "listJoinedTeams": {
+    "function": "listJoinedChats",
+    "service": "teams",
+    "app": "malt"
+  },
+  "getEvents": {
+    "function": "getEvents",
+    "service": "calendar",
+    "app": "malt"
+  },
+  "getConfRoom": {
+    "function": "getConfRoom",
+    "service": "outlook",
+    "app": "malt"
+  }
+}

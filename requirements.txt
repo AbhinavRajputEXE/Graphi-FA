@@ -1,0 +1,6 @@
+# requirements.txt
+mysql-connector-python
+pyjwt
+python-dotenv
+azure-functions
+sqlalchemy

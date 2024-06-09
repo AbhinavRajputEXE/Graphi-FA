@@ -1,0 +1,29 @@
+Working:
+
+sendMail
+getPhoto x
+getProfile
+listJoinedTeams x
+getEvents
+getConfRoom
+scheduleMeeting
+
+
+NotTested:
+(Empty)
+
+
+NoPermission:
+getEmailChanges
+getHighlmpMail
+getinboxRules
+getMail
+getMailFromAdd
+getMailHeader
+getMailWithWord
+getMyMailCategory
+listChats
+forwardMail (Technically won't work because we can't getMails, only will work if we somehow have messageId)
+
+NotWorking:
+(Empty)

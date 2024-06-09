@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "8dc413a7-2e7b-4d20-81b5-c9da03ab7993",
+		"name": "grAPhI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19784717"
+	},
+	"item": [
+		{
+			"name": "Get Mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"service\": \"outlook\",\r\n    \"function\": \"getMail\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/graphi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"graphi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Mail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"payload\":{\r\n      \"recipientEmail\": \"keshab.kataruka@ab-inbev.com\",\r\n      \"subject\": \"donnotreply\",\r\n      \"content-type\": \"text\",\r\n      \"body\": \"This is a sample email sent to you via ms graph api\"\r\n    },\r\n    \"app\": \"coin\",\r\n    \"service\": \"outlook\",\r\n    \"function\": \"sendMail\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/graphi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"graphi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Photo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"service\": \"profile\",\r\n    \"function\": \"getPhoto\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/graphi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"graphi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forward Mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"payload\":{\r\n      \"recipientEmail\": \"keshab.kataruka@ab-inbev.com\",\r\n      \"name\": \"Keshab Kataruka\",\r\n      \"mail_id\": \"AAMkADgwMzM1N2JiLWQ4N2ItNDAzNi05NTZiLWY5ODIxMTJmMDAzYwBGAAAAAABtz--EqzqKSYq9kumqCNstBwC04TORph2hTqp7Ggsu302aAAAAAAEMAAC04TORph2hTqp7Ggsu302aAAApfc2xAAA=\"\r\n    },\r\n    \"service\": \"outlook\",\r\n    \"function\": \"forwardMail\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/graphi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"graphi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get High Important Mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"service\": \"outlook\",\r\n    \"function\": \"getHighImpMail\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/graphi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"graphi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mail From Address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"service\": \"outlook\",\r\n    \"function\": \"getHighImpMail\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/graphi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"graphi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mails With Word",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"payload\":{\r\n      \"word\":\"hello\"\r\n    },\r\n    \"service\": \"outlook\",\r\n    \"function\": \"getMailWithWord\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/graphi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"graphi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mail Changes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"service\": \"outlook\",\r\n    \"function\": \"getMailChanges\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/graphi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"graphi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Inbox Rules",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"service\": \"outlook\",\r\n    \"function\": \"getInboxRules\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/graphi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"graphi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mail Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"service\": \"outlook\",\r\n    \"function\": \"getMailCategory\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/graphi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"graphi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mail Headers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"service\": \"outlook\",\r\n    \"function\": \"getMailHeader\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/graphi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"graphi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Conference Rooms",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"service\": \"outlook\",\r\n    \"function\": \"getConfRoom\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/graphi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"graphi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
